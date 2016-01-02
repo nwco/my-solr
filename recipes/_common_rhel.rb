@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: solr
+# Cookbook Name:: my-solr
 # Recipe:: _COMMON_RHEL
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
@@ -17,4 +17,4 @@ yum_repository 'cloudera-manager' do
   action :create
 end
 
-include_recipe "oracle_jdk.rb"
+include_recipe "my-solr::oracle_jdk"

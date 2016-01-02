@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: ..
+# Cookbook Name:: my-solr 
 # Spec:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe '..::oracle-jdk' do
+describe 'my-solr::oracle-jdk' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new

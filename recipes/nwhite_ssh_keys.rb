@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: cdh
+# Cookbook Name:: my-solr
 # Recipe:: root_ssh_keys
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.

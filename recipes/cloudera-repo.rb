@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: ..
+# Cookbook Name:: my-solr
 # Recipe:: cloudera-repo
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.

@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: solr
+# Cookbook Name:: my-solr
 # Recipe:: _COMMON_SYSTEM
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
@@ -20,6 +20,6 @@ package "ngrep" do
   action :install
 end
 
-include_recipe 'solr::root_ssh_keys'
-include_recipe 'solr::users'
-include_recipe 'solr::nwhite_ssh_keys'
+include_recipe 'my-solr::root_ssh_keys'
+include_recipe 'my-solr::users'
+include_recipe 'my-solr::nwhite_ssh_keys'

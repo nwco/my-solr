@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: cdh
+# Cookbook Name:: my-solr
 # Recipe:: users
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
