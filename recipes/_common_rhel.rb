@@ -16,3 +16,5 @@ yum_repository 'cloudera-manager' do
   gpgkey 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
   action :create
 end
+
+include_recipe "oracle_jdk.rb"
