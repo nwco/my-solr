@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: solr
+# Cookbook Name:: my-solr
 # Recipe:: _COMMON_RHEL
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
@@ -12,9 +12,15 @@ end
 
 yum_repository 'cloudera-manager' do
   description 'Cloudera Manager, Version 5, Internal'
-  baseurl 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/5/'
-  gpgkey 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
+  baseurl 'http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5/'
+  gpgkey 'http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
   action :create
 end
+#yum_repository 'cloudera-manager' do
+#  description 'Cloudera Manager, Version 5, Internal'
+#  baseurl 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/5/'
+#  gpgkey 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
+#  action :create
+#end
 
-include_recipe "oracle_jdk.rb"
+include_recipe "my-solr::oracle_jdk"

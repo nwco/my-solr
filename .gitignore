@@ -2,3 +2,4 @@
 .kitchen.local.yml
 *.bak
 *.lock
+files/default/solr-5.4.0.tgz

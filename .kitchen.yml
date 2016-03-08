@@ -13,5 +13,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[solr::default]
+      - recipe[my-solr::default]
     attributes:

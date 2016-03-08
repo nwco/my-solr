@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: solr
+# Cookbook Name:: my-solr
 # Spec:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'solr::_COMMON_SYSTEM' do
+describe 'my-solr::_common_system' do
   context 'When all attributes are default, on an unspecified platform' do
     let(:chef_run) do
       runner = ChefSpec::ServerRunner.new
