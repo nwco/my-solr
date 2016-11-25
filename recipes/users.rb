@@ -10,3 +10,10 @@ user 'nwhite' do
   password 'hhsuper'
   action :create
 end
+
+directory '/home/nwhite' do
+  owner 'nwhite'
+  group 'nwhite'
+  mode '755'
+  action :create
+end

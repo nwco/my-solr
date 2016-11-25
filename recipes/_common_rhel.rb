@@ -3,6 +3,8 @@
 # Recipe:: _COMMON_RHEL
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
+
+# Add EPEL Repo
 yum_repository 'epel' do
   description 'Extra Packages for Enterprise Linux'
   mirrorlist 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch'
@@ -10,17 +12,13 @@ yum_repository 'epel' do
   action :create
 end
 
+# Add Cloudera Manager repo
 yum_repository 'cloudera-manager' do
   description 'Cloudera Manager, Version 5, Internal'
   baseurl 'http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5/'
   gpgkey 'http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
   action :create
 end
-#yum_repository 'cloudera-manager' do
-#  description 'Cloudera Manager, Version 5, Internal'
-#  baseurl 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/5/'
-#  gpgkey 'http://mirror.infra.cloudera.com/archive/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
-#  action :create
-#end
 
+# Install Oracle Java JDK
 include_recipe "my-solr::oracle_jdk"
