@@ -11,14 +11,3 @@ yum_repository 'epel' do
   gpgkey 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
   action :create
 end
-
-# Add Cloudera Manager repo
-yum_repository 'cloudera-manager' do
-  description 'Cloudera Manager, Version 5, Internal'
-  baseurl 'http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/5/'
-  gpgkey 'http://archive.cloudera.com/cm5/redhat/6/x86_64/cm/RPM-GPG-KEY-cloudera'
-  action :create
-end
-
-# Install Oracle Java JDK
-include_recipe "my-solr::oracle_jdk"
